@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+h1 {
+    background-color: rgb(139, 139, 192);
+    color: white;
+    height: 52px;
+    width: 500px;
+
+    border-top-width: 30px; 
+    border-top-style: solid;
+    border-top-color: blueviolet;
+    border-right-width: 20px;
+    border-right-style: solid;
+    border-right-color: #6b22afbe;
+
+    padding: 10px;
+
+    margin: 51px 270px 51px 270px;
+    
+}
+
+a {
+    border: 2px solid rgb(10, 7, 187);
+
+    padding: 2px 2px 2px 2px;
+   
+}
+
+header {
+    background-color: rgb(235, 164, 82);
+}
