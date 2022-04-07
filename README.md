@@ -1,2 +1,4 @@
 # html-css
- Exercicios 
+ Exercicios
+
+Essea repositórioa contém a base fundamental de conhecimento!
