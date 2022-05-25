@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+body {
+    padding: 15px;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixa {
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin: 40px;
+}
+
+.area-visivel span {
+    color: #666;
+    display: none;
+}
+
+/* max-width, o tamananho da caixa precisa ter até no maximo 600px para a declaração ser aplicada*/
+@media screen and (max-width: 600px) {
+    .um {
+        background-color: #f9c;
+    }
+    span.lt600 {
+        display: inline-block;
+    }
+}
+
+/*o tamanho da caixa precisa ter no minimo 900 px para a declaração ser aplicada*/
+@media screen and (min-width: 900px) {
+    .dois {
+        background-color: #f90;
+    }
+
+    span.gt900 {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .tres {
+        background-color: #9cf;
+    }
+    
+    span.bt600-900 {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-device-width: 480px) {
+    .iphone {
+        background-color: #ccc;
+    }
+}
