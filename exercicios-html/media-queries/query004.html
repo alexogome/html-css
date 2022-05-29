@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position e query</title>
+    <style>
+
+        body {
+            margin: 0px;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background-color: rgb(182, 65, 65);
+            position: absolute; 
+            left: 0px;
+            width: 200px;
+        }
+
+        section {
+            background-color: cadetblue;
+            padding-left: 10px;
+            margin-left: 210px;
+            line-height: 2em;
+        }
+        .espacado {
+            margin-bottom: 100px;
+        }
+
+        footer {
+            font-size: 0.9em;
+            background-color: green;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+
+        }
+
+        @media only screen and (max-width: 700px) {
+            footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+        <nav>
+            <ul>
+                <li>Início</li>
+                <li>Taco Menu</li>
+                <li>Rascuhnos</li>
+                <li>Horas</li>
+                <li>Direções</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+        <section>
+            <p>A propriedade margin-left do elemento section garante que não há espaço a ser preenchido pelo elemento nav. Senão os elementos de absolutos e estáticos iriam sobrepor.</p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolore laborum cumque, impedit tempora quia voluptates hic molestiae rem facilis alias, ullam quaerat? Quod dolores fugit numquam cum adipisci tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatum voluptates saepe quasi temporibus tempore labore earum? Architecto repellendus dolorem commodi ipsa natus, ipsum assumenda praesentium, omnis quibusdam at cum.</p>
+        </section>
+        <section class="espacado">
+            <p>Observe o que acontece quando você redimensiona seu navegador. Ele funciona muito bem!</p>
+        </section>
+        <footer>
+            <p>Se você utilizar um cabeçalho ou um rodapé fixo, verifique se há espaço pra isso! Eu coloquei um margin-bottom no elemento body.</p>
+        </footer>
+</body>
+</html>
