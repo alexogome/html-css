@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox and media query </title>
+    <style>
+            
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+        :root {
+            --cor0: #0F0DB5;
+            --cor1: #0A0875;
+            --cor2: #050436;
+            --font0: 'VT323', monospace;
+            --font1: 'Concert One', cursive;
+        }
+
+        * {
+            margin: 0px;
+            box-sizing: border-box
+        }
+
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            font-family: var(--font0);
+            font-size: 30px;
+            padding: 60px;
+            text-align: center;
+            background-color: #0F0DB5;
+            color: white;
+        }
+
+        div {
+            height: 53px;
+            border: 2px solid black;
+            background-image: url();
+        }
+
+        nav {
+            max-width: 350px;
+            height: 50px;
+            margin: auto;
+            border: 1px solid black;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+
+        nav a {
+            padding: 7px;
+            flex: 1;
+        }
+
+        h1 {
+            font-family: var(--font1);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>website</h1>
+    </header>
+    <div>
+        <nav>
+            <a href="https://github.com/alexogome"><img src="icone/github.png" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/alex-gomes-161489236/"><img src="icone/logotipo-do-linkedin.png" alt="linkedin"></a>
+            <a href="https://twitter.com/alexogome"><img src="icone/sinal-do-twitter.png" alt="twitter"></a>
+        </nav>
+    </div>
+    <main>
+        <section>
+           <h1>About Me</h1> 
+           <img src="" alt="">
+           <h2>Bibliografy</h2>
+           <P>a front-end web developer. <br>
+            Scaling innovation</P>
+            <h1>partnerships</h1>
+            <img src="" alt="">
+            <img src="" alt="">
+        </section>
+        <section>
+            <h1>Criando projetos dinamicos</h1>
+            <img src="" alt="">
+            <p>A TI é uma area em contante crescimento, onde é necessario dinamismo para alcançar os relustados esperados. trabalhar com a internét traz possibilidades incriveis para todos. Seja qual for a sua área, a intenet te da o espaço nesseçario para divulgar o seu produto ou sua marca.</p>
+        </section>
+    </main>
+    <footer>
+        <a href=""></a>
+    </footer>
+</body>
+</html>
