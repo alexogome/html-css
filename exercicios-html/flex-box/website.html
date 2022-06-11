@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexbox and media query </title>
     <style>
-            
+        @charset "UTF-8";
+
         @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
         @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
@@ -26,31 +27,47 @@
 
         html, body {
             font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
         }
 
         header {
-            font-family: var(--font0);
-            font-size: 30px;
-            padding: 60px;
-            text-align: center;
+            height: 55vh;
+            padding: 10px;
             background-color: #0F0DB5;
-            color: white;
+            padding-top: 60px;
         }
 
+        header  h1 {
+            padding-top: 30px;
+            text-align: center;
+            color: white;
+            
+
+        }
+
+        
+        #website {
+            font-family: var(--font1);
+        }
+
+       
         div {
-            height: 53px;
+            height: 9vh;
             border: 2px solid black;
             background-image: url();
+            padding: 1px;
+
         }
 
         nav {
-            max-width: 350px;
-            height: 50px;
+            width: 50vw;
+            height: 8vh;
             margin: auto;
             border: 1px solid black;
             display: flex;
             flex-flow: column wrap;
             align-items: center;
+            justify-content: center;
         }
 
         nav a {
@@ -58,24 +75,23 @@
             flex: 1;
         }
 
-        h1 {
-            font-family: var(--font1);
+        section h1 {
+            font-family: var(--font0);
+            text-align: center;
+            background-image: linear-gradient(to right, var(--cor2), transparent);
+            color: rgb(68, 67, 67);
+
         }
+
+
 
         
     </style>
 </head>
 <body>
     <header>
-        <h1>website</h1>
+        <h1 id="website">website</h1>
     </header>
-    <div>
-        <nav>
-            <a href="https://github.com/alexogome"><img src="icone/github.png" alt="Github"></a>
-            <a href="https://www.linkedin.com/in/alex-gomes-161489236/"><img src="icone/logotipo-do-linkedin.png" alt="linkedin"></a>
-            <a href="https://twitter.com/alexogome"><img src="icone/sinal-do-twitter.png" alt="twitter"></a>
-        </nav>
-    </div>
     <main>
         <section>
            <h1>About Me</h1> 
@@ -83,6 +99,13 @@
            <h2>Bibliografy</h2>
            <P>a front-end web developer. <br>
             Scaling innovation</P>
+            <div>
+                <nav>
+                    <a href="https://github.com/alexogome"><img src="icone/github.png" alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/alex-gomes-161489236/"><img src="icone/logotipo-do-linkedin.png" alt="linkedin"></a>
+                    <a href="https://twitter.com/alexogome"><img src="icone/sinal-do-twitter.png" alt="twitter"></a>
+                </nav>
+            </div>
             <h1>partnerships</h1>
             <img src="" alt="">
             <img src="" alt="">
@@ -94,7 +117,7 @@
         </section>
     </main>
     <footer>
-        <a href=""></a>
+        <p><a href="">twitter</a></p>
     </footer>
 </body>
 </html>
