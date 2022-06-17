@@ -8,6 +8,18 @@
     <style>
         @charset "UTF-8";
 
+        @font-face {
+            font-family: 'Americano';
+            src: url(font/Americano.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Computed file';
+            src: url(font/Corrupted\ File.ttf) format('truetype'); 
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
         @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
         @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
@@ -18,6 +30,9 @@
             --cor2: #050436;
             --font0: 'VT323', monospace;
             --font1: 'Concert One', cursive;
+            --font2: 'Rowdies', cursive;
+            --font3: 'Computed file', Arial, Helvetica, sans-serif;
+            --font4: Americano, Arial;
         }
 
         * {
@@ -31,57 +46,200 @@
         }
 
         header {
-            height: 55vh;
+            height: 300px;
             padding: 10px;
             background-color: #0F0DB5;
             padding-top: 60px;
         }
 
         header  h1 {
+            font-size: 30px;
             padding-top: 30px;
             text-align: center;
             color: white;
-            
+            font-family: var(--font1);
 
         }
-
         
-        #website {
-            font-family: var(--font1);
+        section {
+            max-width: 313px;
+            margin: auto;
+        }
+        
+        h1#aboutme { 
+            margin-top: 0px;
+            border-radius: 10px 0px 0px 10px;
+            font-family: var(--font0);
+            text-indent: 10px;
+            font-size: 15px;
+        }
+
+        #photo {
+
+            max-width: 300px;
+            display: block;
+            margin: auto;
+
         }
 
        
-        div {
-            height: 9vh;
-            border: 2px solid black;
-            background-image: url();
-            padding: 1px;
+
+        h2 { 
+            margin: 10px;
+            font-size: 15px;
+
 
         }
+        
+        h2::after {     
+            content: '\0000A\2714';
+        }
+    
 
-        nav {
-            width: 50vw;
-            height: 8vh;
+        #nav-link-social {
+            width: 150px;
+            height: 10vh;
             margin: auto;
-            border: 1px solid black;
+            border: 1px solid white;
             display: flex;
             flex-flow: column wrap;
             align-items: center;
             justify-content: center;
         }
 
-        nav a {
-            padding: 7px;
+        #nav-link-social-01 nav > a {
+            padding-top: 7px ;
             flex: 1;
+
         }
 
         section h1 {
+            margin-top: 40px;
             font-family: var(--font0);
-            text-align: center;
-            background-image: linear-gradient(to right, var(--cor2), transparent);
-            color: rgb(68, 67, 67);
+            font-size: 15px;
+            text-indent: 15px;
+            text-shadow: 1px 0px 2px white;
+            border: 3px solid white;
+            background-image: linear-gradient(to right, #0000ffc4, transparent);
+            color: rgb(27, 27, 27);
 
         }
+
+
+        #bio-p {
+           font-family: var(--font2);
+           font-size: 15px;
+           padding: 20px 10px 10px 10px;
+           text-indent: 10px;
+           
+        }
+
+        
+        #div-partnerships {
+            max-width: 350px;
+            margin: auto;
+           
+        }
+      
+        #img-one {
+            max-width: 160px;
+            display: block;
+            margin: 40px auto 0px auto;
+            
+        }
+
+        #paragrafo-hugo-1 {
+            color: rgb(255, 145, 0);
+            font-family: var(--font3);
+            font-size: 15px;
+            width: 200px;
+            margin: auto;
+            text-align: center;
+           
+           
+        }
+
+        #paragrafo-hugo-2 {
+            font-family: var(--font4);
+            text-align: center;
+            text-decoration: underline;
+            margin-top: 20px;
+        }
+
+        #img-two {
+            width: 100%;
+        }
+
+        #paragrafo-guanabara {
+            font-family: var(--font1);
+            font-size: 16px;
+            margin: 70px 0px 2px 0px;
+        }
+
+        footer {
+            background-color: rgb(56, 56, 56); 
+            border-radius: 10px 1px 0 0;
+            margin: 60px auto 2px auto;
+            text-align: center;
+        }
+
+        footer a  {
+            color: white;
+
+        }
+
+        footer a::hover {
+            background-color: #0F0DB5;
+        }
+
+        @media screen and (min-width: 550px){
+            section {
+                max-width: 600px;
+            }
+
+            h1#aboutme {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            section h1 {
+                font-size: 20px;
+            }
+
+            #bio-p {
+                font-size: 20px;
+            }
+
+            
+        #img-one {
+            max-width: 200px;
+            
+        }
+
+        #paragrafo-hugo-1 {
+            font-size: 17px;
+        }
+
+        #paragrafo-hugo-2 {
+            font-size: 24px;
+        }
+
+        }
+
+        @media screen and (min-width: 1000){
+            
+        }
+
+
+
+        
+
+       
+       
+        
 
 
 
@@ -94,30 +252,42 @@
     </header>
     <main>
         <section>
-           <h1>About Me</h1> 
-           <img src="" alt="">
+           <h1 id="aboutme">About:</h1>
+           <img id="photo" src="image/skillswebdeveloper.jpeg" alt="">
            <h2>Bibliografy</h2>
-           <P>a front-end web developer. <br>
+           <P id="bio-p">a front-end web developer. <br>
             Scaling innovation</P>
-            <div>
-                <nav>
-                    <a href="https://github.com/alexogome"><img src="icone/github.png" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/alex-gomes-161489236/"><img src="icone/logotipo-do-linkedin.png" alt="linkedin"></a>
-                    <a href="https://twitter.com/alexogome"><img src="icone/sinal-do-twitter.png" alt="twitter"></a>
+                <nav id="nav-link-social">
+                    <a href="https://github.com/alexogome"><img src="icone/github-p.png" alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/alex-gomes-161489236/"><img src="icone/logotipo-do-linkedin-p.png" alt="linkedin"></a>
+                    <a href="https://twitter.com/alexogome"><img src="icone/sinal-do-twitter-p.png" alt="twitter"></a>
                 </nav>
+            <h1 id="h1-partnerships">partnerships:</h1>
+            <div id="div-partnerships">
+                <picture >
+                    <img id="img-one" src="image/webdesign-p.png" alt="ilustrator-famous">
+                </picture>
+                <p id="paragrafo-hugo-1">I_PROGOS</p>
+                <p id="paragrafo-hugo-2">ilustrator : Hugo Gomes</p>
+                <nav id="nav-link-social">
+                    <a href="https://www.artstation.com/iprogos"> <img src="icone/artstation.png" alt="artista artistation"></a>
+                    <a href="https://www.instagram.com/i_progos/"> <img src="icone/instagram.png" alt="ilustrator-instagram"></a>
+                </nav>
+                <p id="paragrafo-guanabara">professor Gustavo Guanabara</p>
+                <img id="img-two" src="image/gustavoguanabara-vertical.png" alt="">
             </div>
-            <h1>partnerships</h1>
-            <img src="" alt="">
-            <img src="" alt="">
+            
+             
+           
         </section>
         <section>
             <h1>Criando projetos dinamicos</h1>
             <img src="" alt="">
-            <p>A TI é uma area em contante crescimento, onde é necessario dinamismo para alcançar os relustados esperados. trabalhar com a internét traz possibilidades incriveis para todos. Seja qual for a sua área, a intenet te da o espaço nesseçario para divulgar o seu produto ou sua marca.</p>
+            <p >A TI é uma area dinâmica e inovadora. trabalhar com a internét traz possibilidades incriveis para todos. Seja qual for a área, a intenet da o espaço e o suporte nesseçario para divulgar o seu produto ou sua marca.</p>
         </section>
     </main>
     <footer>
-        <p><a href="">twitter</a></p>
+        <p><a href="https://twitter.com/alexogome">twitter</a></p>
     </footer>
 </body>
 </html>
